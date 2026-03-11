@@ -1,0 +1,133 @@
+.navbar {
+  width: 100%;
+  background: #f4f6f8;
+  padding: 14px 40px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo-icon {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, #2b6cb0, #2aa198);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+.highlight {
+  color: #2b6cb0;
+}
+
+/* nav links */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 34px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.nav-links .active {
+  background: #e8edf3;
+  color: #2b6cb0;
+}
+
+/* button */
+
+.contact-btn {
+  background: linear-gradient(90deg, #2b6cb0, #2aa198);
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+/* -------- Tablet -------- */
+
+@media (max-width:1024px){
+
+  .navbar{
+    padding:14px 25px;
+  }
+
+  .nav-links{
+    gap:22px;
+    font-size:15px;
+  }
+
+}
+
+
+/* -------- Mobile -------- */
+
+@media (max-width:768px){
+
+  .navbar{
+    padding:12px 20px;
+  }
+
+  .nav-links{
+    display:none; /* hide links for mobile */
+  }
+
+  .logo{
+    font-size:18px;
+  }
+
+  .logo-icon{
+    width:36px;
+    height:36px;
+    font-size:16px;
+  }
+
+  .contact-btn{
+    padding:10px 18px;
+    font-size:14px;
+  }
+
+}
+
+
+/* -------- Small Mobile -------- */
+
+@media (max-width:480px){
+
+  .navbar{
+    padding:10px 16px;
+  }
+
+  .contact-btn{
+    padding:8px 16px;
+    font-size:13px;
+  }
+
+}

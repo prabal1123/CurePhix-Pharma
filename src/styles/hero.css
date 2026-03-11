@@ -1,0 +1,145 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* blue overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 70, 120, 0.55);
+}
+
+/* text container */
+.hero-overlay {
+  position: relative;
+  max-width: 1200px;
+  padding-left: 80px;
+  padding-right: 20px;
+  color: white;
+}
+
+/* badge */
+.hero-tag {
+  display: inline-block;
+  background: white;
+  color: #2b6cb0;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* heading */
+.hero h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+/* description */
+.hero p {
+  max-width: 520px;
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+/* button */
+.hero-btn {
+  background: linear-gradient(90deg, #2b6cb0, #2aa198);
+  color: white;
+  border: none;
+  padding: 14px 26px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  opacity: 0.9;
+}
+
+/* -------- Tablet -------- */
+
+@media (max-width:1024px){
+
+  .hero-overlay{
+    padding-left:40px;
+    padding-right:40px;
+  }
+
+  .hero h1{
+    font-size:48px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+}
+
+/* -------- Mobile -------- */
+
+@media (max-width:768px){
+
+  .hero{
+    height:auto;
+    padding:120px 20px 80px;
+  }
+
+  .hero-overlay{
+    padding:0;
+    text-align:center;
+  }
+
+  .hero h1{
+    font-size:34px;
+  }
+
+  .hero p{
+    max-width:100%;
+    font-size:16px;
+  }
+
+  .hero-btn{
+    padding:12px 22px;
+    font-size:15px;
+  }
+
+}
+
+/* -------- Small Mobile -------- */
+
+@media (max-width:480px){
+
+  .hero{
+    padding:100px 16px 70px;
+  }
+
+  .hero h1{
+    font-size:28px;
+    line-height:1.2;
+  }
+
+  .hero p{
+    font-size:15px;
+  }
+
+  .hero-tag{
+    font-size:12px;
+  }
+
+}
