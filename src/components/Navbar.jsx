@@ -6,20 +6,23 @@ export default function Navbar() {
       <div className="nav-container">
 
         <div className="logo">
-          <div className="logo-icon">💊</div>
-          <span className="logo-text">
-            Cure<span className="highlight">Phix</span> Pharma
-          </span>
+          <img
+            src="https://xzpyaylnaakhtfqshhmv.supabase.co/storage/v1/object/public/Work/IMG_1207.jpg"
+            alt="CurePhix Pharma"
+            className="logo-img"
+          />
         </div>
 
         <ul className="nav-links">
-          <li className="active">Home</li>
-          <li>About Us</li>
-          <li>Products</li>
-          <li>Contact</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
 
-        <button className="contact-btn">Get In Touch</button>
+        <a href="#contact" className="contact-btn">
+  Get In Touch
+</a>
 
       </div>
     </nav>

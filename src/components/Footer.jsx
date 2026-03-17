@@ -9,7 +9,7 @@ export default function Footer() {
   };
 
   return (
-    <footer>
+    <footer id="contact">
 
       {/* Contact Banner */}
 
@@ -20,7 +20,7 @@ export default function Footer() {
 
           <div className="contact-info">
             <span>📞 +91 740 859 1000</span>
-            <span>✉ info@curephixpharma.com</span>
+            <span>✉ curephixpharma@gmail.com</span>
           </div>
         </div>
 

@@ -1,48 +1,4 @@
-// import { useState, useEffect } from "react";
-// import "../styles/hero.css";
 
-// import hero1 from "../assets/images/hero-pharma-1.jpg";
-// import hero2 from "../assets/images/hero-pharma-2.jpg";
-// import hero3 from "../assets/images/hero-pharma-3.jpg";
-
-// const images = [hero1, hero2, hero3];
-
-// export default function Hero() {
-//   const [index, setIndex] = useState(0);
-
-//   useEffect(() => {
-//     const interval = setInterval(() => {
-//       setIndex((prev) => (prev + 1) % images.length);
-//     }, 4000);
-
-//     return () => clearInterval(interval);
-//   }, []);
-
-//   return (
-//     <section
-//       className="hero"
-//       style={{ backgroundImage: `url(${images[index]})` }}
-//     >
-//       <div className="hero-overlay">
-//         <span className="hero-tag">TRUSTED PHARMACEUTICAL PARTNER</span>
-
-//         <h1>
-//           Advancing Healthcare
-//           <br />
-//           Through Innovation
-//         </h1>
-
-//         <p>
-//           CurePhix Pharma is committed to delivering high-quality,
-//           affordable pharmaceutical products that improve lives and
-//           empower healthcare professionals.
-//         </p>
-
-//         <button className="hero-btn">Explore Products →</button>
-//       </div>
-//     </section>
-//   );
-// }
 import { useState, useEffect } from "react";
 import "../styles/hero.css";
 
@@ -65,6 +21,7 @@ export default function Hero() {
 
   return (
     <section
+     id="home"
       className="hero"
       style={{ backgroundImage: `url(${heroImages[index]})` }}
     >
