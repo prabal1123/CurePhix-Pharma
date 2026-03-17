@@ -76,7 +76,7 @@ export default function Footer() {
 
           <h4>Online</h4>
 
-          <p>www.curephixpharma.com</p>
+          <p>www.curephixpharma.in</p>
 
           <p>
             CurePhix Pharma is a pharmaceutical company focused on
