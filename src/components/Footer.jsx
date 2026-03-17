@@ -66,7 +66,7 @@ export default function Footer() {
 
           <p>Flat no. 810, 8th floor, Royal Plaza</p>
           <p>Golf City, Sector B Ansal API, Lucknow, Uttar Pradesh, Pin - 226030</p>
-          <p>curephixpharma@gmail.in</p>
+          <p>curephixpharma@gmail.com</p>
           <p>+91 7408591000</p>
 
         </div>
