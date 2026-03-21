@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import "../styles/hero.css";
 
 const heroImages = [
-  "https://xzpyaylnaakhtfqshhmv.supabase.co/storage/v1/object/public/Work/hero-pharma-1.jpg",
-  "https://xzpyaylnaakhtfqshhmv.supabase.co/storage/v1/object/public/Work/hero-pharma-2.jpg",
-  "https://xzpyaylnaakhtfqshhmv.supabase.co/storage/v1/object/public/Work/hero-pharma-3.jpg",
+  "https://xzpyaylnaakhtfqshhmv.supabase.co/storage/v1/object/public/Work/tempImageWiPlfu.jpeg",
+  "https://xzpyaylnaakhtfqshhmv.supabase.co/storage/v1/object/public/Work/tempImageUKOkLf%20(1).jpeg",
+  "https://xzpyaylnaakhtfqshhmv.supabase.co/storage/v1/object/public/Work/ChatGPTImageMar222026at12_30_47A.jpeg",
 ];
 
 export default function Hero() {
