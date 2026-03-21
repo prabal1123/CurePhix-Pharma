@@ -66,7 +66,7 @@ export default function Footer() {
 
           <p>Flat no. 810, 8th floor, Royal Plaza</p>
           <p>Golf City, Sector B Ansal API, Lucknow, Uttar Pradesh, Pin - 226030</p>
-          <p>curephixpharma@gmail.com</p>
+          <p>curephix@gmail.com</p>
           <p>+91 7408591000</p>
 
         </div>
@@ -76,7 +76,7 @@ export default function Footer() {
 
           <h4>Online</h4>
 
-          <p>www.curephixpharma.in</p>
+          <p>www.curephix.in</p>
 
           <p>
             CurePhix Pharma is a pharmaceutical company focused on

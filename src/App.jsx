@@ -10,18 +10,21 @@ import Certifications from "./components/Certifications";
 import Coverage from "./components/Coverage";
 import Footer from "./components/Footer";
 import WhatsappFloat from "./components/WhatsappFloat";
-
+import MapFloat from "./components/mapFloat";
+import Motive from "./components/Motive";
 function HomePage() {
   return (
     <>
       <Hero />
       <About />
+      <Motive />
       <Strengths />
       <Products />
       <Certifications />
       <Coverage />
       <Footer />
       <WhatsappFloat />
+      <MapFloat /> 
     </>
   );
 }

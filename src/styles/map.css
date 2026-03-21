@@ -1,0 +1,50 @@
+.map-float{
+  position:fixed;
+  bottom:110px;   /* 👈 PERFECT spacing above WhatsApp */
+  right:30px;
+
+  width:65px;
+  height:65px;
+
+  background:#2563eb; /* blue */
+  color:white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border-radius:50%;
+  font-size:30px;
+
+  cursor:pointer;
+
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+
+  transition:all 0.3s ease;
+
+  z-index:999;
+}
+
+/* hover */
+
+.map-float:hover{
+  transform:scale(1.1);
+}
+
+/* pulse effect (optional but cool) */
+
+@keyframes pulse-blue{
+  0%{
+    box-shadow:0 0 0 0 rgba(37,99,235,0.7);
+  }
+  70%{
+    box-shadow:0 0 0 15px rgba(37,99,235,0);
+  }
+  100%{
+    box-shadow:0 0 0 0 rgba(37,99,235,0);
+  }
+}
+
+.map-float{
+  animation:pulse-blue 2s infinite;
+}

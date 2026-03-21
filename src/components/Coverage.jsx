@@ -14,17 +14,17 @@ export default function Coverage() {
 
     const interval = setInterval(() => {
 
-      if (d < 150) {
+      if (d < 24) {
         d += 3;
         setDistricts(d);
       }
 
-      if (doc < 5000) {
+      if (doc < 2000) {
         doc += 100;
         setDoctors(doc);
       }
 
-      if (d >= 150 && doc >= 5000) {
+      if (d >= 24 && doc >= 2000) {
         clearInterval(interval);
       }
 

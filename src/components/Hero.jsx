@@ -40,7 +40,9 @@ export default function Hero() {
           empower healthcare professionals.
         </p>
 
-        <button className="hero-btn">Explore Products →</button>
+        <a href="#products" className="hero-btn">
+          Explore Products →
+        </a>
       </div>
     </section>
   );

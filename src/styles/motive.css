@@ -1,0 +1,44 @@
+/* reuse your .about styles */
+
+/* principles section */
+
+.principles{
+  margin-top:50px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  text-align:left;
+}
+
+.principle{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  transition:0.3s;
+}
+
+.principle:hover{
+  transform:translateY(-5px);
+}
+
+.principle h4{
+  font-size:18px;
+  color:#1f2937;
+  margin-bottom:8px;
+}
+
+.principle p{
+  font-size:15px;
+  color:#6b7280;
+  line-height:1.6;
+}
+
+
+/* responsive */
+
+@media (max-width:768px){
+  .principles{
+    grid-template-columns:1fr;
+  }
+}
