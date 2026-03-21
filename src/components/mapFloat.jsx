@@ -5,7 +5,7 @@ export default function MapFloat() {
 
   const openMap = () => {
     window.open(
-      "https://www.google.com/maps/dir/?api=1&destination=CurePhix+Pharma+Lucknow",
+      " https://maps.app.goo.gl/vcCR8bxcKRyCeB3R6?g_st=iw",
       "_blank"
     );
   };

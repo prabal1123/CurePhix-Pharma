@@ -20,7 +20,7 @@ export default function Footer() {
 
           <div className="contact-info">
             <span>📞 +91 740 859 1000</span>
-            <span>✉ curephixpharma@gmail.com</span>
+            <span>✉ curephix@gmail.com</span>
           </div>
         </div>
 
