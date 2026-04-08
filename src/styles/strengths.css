@@ -1,152 +1,142 @@
-.strengths{
-  padding:120px 20px;
-  background:#f7f9fb;
-  text-align:center;
+.strengths {
+  padding: 120px 40px;
+  background: #f7f9fb;
+  text-align: center;
 }
 
-.strengths-header{
-  margin-bottom:60px;
+.strengths-header {
+  margin-bottom: 60px;
 }
 
-.tag{
-  background:#e8edf3;
-  color:#2b6cb0;
-  padding:6px 14px;
-  border-radius:20px;
-  font-size:13px;
-  font-weight:600;
+.tag {
+  background: #e8edf3;
+  color: #2b6cb0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: inline-block;
 }
 
-.strengths h2{
-  font-size:40px;
-  margin-top:16px;
-  color:#1f2937;
+.strengths h2 {
+  font-size: 40px;
+  margin-top: 16px;
+  color: #1f2937;
 }
 
-.strengths-grid{
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:30px;
+.strengths-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
-.strength-card{
-  background:white;
-  padding:40px 28px;
-  border-radius:14px;
-  box-shadow:0 4px 12px rgba(0,0,0,0.05);
-  transition:0.3s;
+.strength-card {
+  background: white;
+  padding: 40px 28px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.3s;
 }
 
-.strength-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 8px 22px rgba(0,0,0,0.08);
+.strength-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.08);
 }
 
-.icon{
-  width:60px;
-  height:60px;
-  background:#edf2f7;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:14px;
-  font-size:26px;
-  margin:0 auto 20px;
+.icon {
+  width: 60px;
+  height: 60px;
+  background: #edf2f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-size: 26px;
+  margin: 0 auto 20px;
 }
 
-.strength-card h3{
-  margin-bottom:12px;
-  font-size:18px;
-  color:#1f2937;
+.strength-card h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #1f2937;
 }
 
-.strength-card p{
-  font-size:15px;
-  color:#6b7280;
-  line-height:1.6;
+.strength-card p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
 }
-
 
 /* -------- Laptop -------- */
-
-@media (max-width:1200px){
-
-  .strengths-grid{
-    grid-template-columns:repeat(3,1fr);
+@media (max-width: 1200px) {
+  .strengths-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-
 }
-
 
 /* -------- Tablet -------- */
-
-@media (max-width:1024px){
-
-  .strengths{
-    padding:100px 30px;
+@media (max-width: 1024px) {
+  .strengths {
+    padding: 100px 30px;
   }
 
-  .strengths h2{
-    font-size:34px;
+  .strengths h2 {
+    font-size: 34px;
   }
 
-  .strengths-grid{
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
+  .strengths-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
-
 }
-
 
 /* -------- Mobile -------- */
-
-@media (max-width:768px){
-
-  .strengths{
-    padding:80px 20px;
+@media (max-width: 768px) {
+  .strengths {
+    padding: 60px 24px;   /* ✅ reduced gap */
   }
 
-  .strengths-header{
-    margin-bottom:45px;
+  .strengths-header {
+    margin-bottom: 40px;
   }
 
-  .strengths h2{
-    font-size:28px;
+  .strengths h2 {
+    font-size: 28px;
   }
 
-  .strength-card{
-    padding:30px 22px;
+  .strengths-grid {
+    grid-template-columns: 1fr 1fr;  /* ✅ 2 cols on mobile looks better */
+    gap: 16px;
   }
 
+  .strength-card {
+    padding: 24px 16px;
+  }
 }
 
-
 /* -------- Small Mobile -------- */
-
-@media (max-width:480px){
-
-  .strengths{
-    padding:70px 16px;
+@media (max-width: 480px) {
+  .strengths {
+    padding: 50px 20px 40px;
   }
 
-  .strengths-grid{
-    grid-template-columns:1fr;
+  .strengths-grid {
+    grid-template-columns: 1fr;
   }
 
-  .icon{
-    width:52px;
-    height:52px;
-    font-size:22px;
+  .icon {
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
   }
 
-  .strength-card h3{
-    font-size:16px;
+  .strength-card h3 {
+    font-size: 16px;
   }
 
-  .strength-card p{
-    font-size:14px;
+  .strength-card p {
+    font-size: 14px;
   }
-
 }
