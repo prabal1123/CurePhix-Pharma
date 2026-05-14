@@ -6,138 +6,176 @@
   display: flex;
   align-items: center;
   position: relative;
-  font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
+  /* Add a base background color in case images load slow */
+  background-color: #0f172a; 
 }
 
-/* blue overlay */
-.hero::before {
-  content: "";
+/* Updated Overlay with a darker gradient */
+.hero-overlay {
   position: absolute;
-  inset: 0;
-  background: rgba(20, 70, 120, 0.55);
+  inset: 0; /* Shortcut for top, left, right, bottom: 0 */
+  
+  /* 👇 This creates a dark layer over the image to make text readable */
+  background: rgba(0, 0, 0, 0.55); 
+  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  /* Drop shadow adds extra readability */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.hero p {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  /* Make the subtext slightly more transparent but still white */
+  color: rgba(255, 255, 255, 0.9); 
 }
 
 .hero-overlay {
   position: relative;
   width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  
+  /* 👇 THESE 4 LINES DO THE MAGIC 👇 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center;     /* Centers horizontally */
+  
+  text-align: center;      /* Ensures the lines of text inside center themselves */
   color: white;
-}
-
-.hero-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: 80px;
-  padding-right: 80px;
 }
 
 .hero-tag {
-  display: inline-block;
-  background: white;
-  color: #2b6cb0;
-  font-weight: 600;
-  font-size: 13px;
-  padding: 6px 14px;
-  border-radius: 20px;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  font-size: 64px;
+  background: #3182ce;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
 }
 
-.hero p {
-  max-width: 520px;
+.hero-overlay h1 {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  max-width: 900px;
+  letter-spacing: -0.02em;
+}
+
+.hero-overlay p {
   font-size: 18px;
   line-height: 1.6;
-  opacity: 0.9;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  max-width: 600px; /* Constrain the width of the paragraph */
+  color: #e2e8f0;
 }
 
 .hero-btn {
-  background: linear-gradient(90deg, #2b6cb0, #2aa198);
-  color: white;
-  border: none;
-  padding: 14px 26px;
-  font-size: 16px;
+  background: white;
+  color: #3182ce;
+  padding: 16px 32px;
   border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 700;
   text-decoration: none;
-  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero-btn:hover {
-  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* -------- Tablet -------- */
+/* -------- Tablet/Large Mobile (Below 1024px) -------- */
 @media (max-width: 1024px) {
-  .hero-content {
-    padding-left: 40px;
-    padding-right: 40px;
+  .hero-overlay {
+    padding: 0 30px;
   }
 
-  .hero h1 {
+  .hero-overlay h1 {
     font-size: 48px;
   }
-
-  .hero p {
-    font-size: 17px;
-  }
 }
 
-/* -------- Mobile -------- */
+/* -------- Mobile (Below 768px) -------- */
 @media (max-width: 768px) {
-  .hero {
-    height: auto;
-    padding: 140px 24px 80px;  /* ✅ top accounts for navbar height */
-  }
-
   .hero-overlay {
-    padding: 0;
-    text-align: center;
+    padding: 0 24px; /* Essential side padding */
+    justify-content: center; /* Ensure content stays vertically centered */
   }
 
-  .hero-content {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .hero h1 {
-    font-size: 34px;
-  }
-
-  .hero p {
-    max-width: 100%;
-    font-size: 16px;
-  }
-
-  .hero-btn {
-    padding: 12px 22px;
-    font-size: 15px;
-  }
-}
-
-/* -------- Small Mobile -------- */
-@media (max-width: 480px) {
+  /* Reduce the size of the background overlay if needed, 
+     but 100vh usually looks best on mobile hero sections */
   .hero {
-    padding: 130px 20px 70px;
-  }
-
-  .hero h1 {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  .hero p {
-    font-size: 15px;
+    height: 90vh; 
   }
 
   .hero-tag {
     font-size: 12px;
+    padding: 6px 12px;
+    margin-bottom: 16px;
+  }
+
+  .hero-overlay h1 {
+    font-size: 36px; /* Significantly smaller to fit screen */
+    margin-bottom: 16px;
+    max-width: 100%; /* Important: Don't let it exceed container */
+    padding: 0 10px; /* Extra inner padding just in case */
+  }
+
+  .hero-overlay p {
+    font-size: 15px; /* Slightly smaller for readability */
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 95%; /* Constrain the paragraph further */
+  }
+
+  .hero-btn {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+}
+
+/* -------- Small Mobile (Below 480px) -------- */
+@media (max-width: 480px) {
+  .hero-overlay {
+    padding: 0 16px; /* Tight gutter for small screens */
+  }
+
+  .hero-overlay h1 {
+    font-size: 30px; /* Base size for very small phones */
+    line-height: 1.25;
+  }
+
+  .hero-overlay p {
+    font-size: 14px;
+    max-width: 100%;
+  }
+
+  .hero-btn {
+    padding: 12px 24px;
+    font-size: 14px;
   }
 }
